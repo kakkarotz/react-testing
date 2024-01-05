@@ -20,7 +20,7 @@ describe("Application", () => {
     expect(paragraphElement).toBeInTheDocument();
 
     const paragraphElement2 = screen.getByText((content) =>
-      content.endsWith("mandatory")
+      content.endsWith("mandatory"),
     );
 
     const closeElement = screen.getByTitle("close");
@@ -61,7 +61,7 @@ describe("Application", () => {
     expect(termsElement).toBeInTheDocument();
 
     const termsElement2 = screen.getByLabelText(
-      "I agree to the terms and conditions"
+      "I agree to the terms and conditions",
     );
     expect(termsElement2).toBeInTheDocument();
 
